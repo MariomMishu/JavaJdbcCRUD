@@ -1,6 +1,15 @@
 package crud;
 
 public class User {
+	@Override
+	public String toString() {
+		return "User [id=" + id + ", username=" + username + ", email=" + email + ", password=" + password
+				+ ", fullname=" + fullname + ", phone=" + phone + ", address=" + address + ", getId()=" + getId()
+				+ ", getUsername()=" + getUsername() + ", getEmail()=" + getEmail() + ", getPassword()=" + getPassword()
+				+ ", getFullname()=" + getFullname() + ", getPhone()=" + getPhone() + ", getAddress()=" + getAddress()
+				+ ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()=" + super.toString()
+				+ "]";
+	}
 	private int id;
 	private String username, email,password,fullname, phone,address;
 	public int getId() {
